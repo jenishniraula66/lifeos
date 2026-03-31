@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ExpenseFlow</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+<h2>ExpenseFlow</h2>
+
+<ul>
+<li>Home</li>
+<li>Features</li>
+<li>Tracker</li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>Track Your Expenses <span>Smartly</span></h1>
+
+<p>Minimal. Fast. Powerful expense tracker for modern users.</p>
+
+<button onclick="scrollToTracker()">Start Tracking</button>
+
+</section>
+
+<!-- Features -->
+
+<section class="features">
+
+<h2>Features</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+<h3>Easy Tracking</h3>
+<p>Add expenses instantly</p>
+</div>
+
+<div class="feature">
+<h3>Analytics</h3>
+<p>Track spending habits</p>
+</div>
+
+<div class="feature">
+<h3>Secure</h3>
+<p>Data stored locally</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- How it Works -->
+
+<section class="how">
+
+<h2>How it Works</h2>
+
+<div class="steps">
+
+<div>1. Add Expense</div>
+<div>2. Track</div>
+<div>3. Save Money</div>
+
+</div>
+
+</section>
+
+<!-- Tracker -->
+
+<section class="tracker" id="tracker">
+
+<h2>Expense Tracker</h2>
+
+<div class="input-group">
+
+<input type="text" id="name" placeholder="Expense name">
+<input type="number" id="amount" placeholder="Amount">
+
+<button onclick="addExpense()">Add</button>
+
+</div>
+
+<ul id="list"></ul>
+
+<h3>Total: ₹<span id="total">0</span></h3>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Start Managing Your Money Today</h2>
+
+<button onclick="scrollToTracker()">Get Started</button>
+
+</section>
+
+<footer>
+
+<p>ExpenseFlow © 2026</p>
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
